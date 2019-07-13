@@ -34,7 +34,7 @@
             }
 
             Q = new Spell(SpellSlot.Q, 925f);
-            Q.SetSkillshot(0.25f, 80f, float.MaxValue, true, SkillshotType.Line);
+            Q.SetSkillshot(0.25f, 80f, float.MaxValue, false, SkillshotType.Line);
 
             W = new Spell(SpellSlot.W, 1000f);
 
