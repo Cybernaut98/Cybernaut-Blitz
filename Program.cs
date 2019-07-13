@@ -78,6 +78,8 @@
                 var target = TargetSelector.GetTarget(Q.Range, DamageType.Physical);
 
                 if (target != null && target.IsValidTarget(Q.Range))
+                    if (target == null)
+                        return;
                 {
                     var pred = Q.GetPrediction(target);
                     if (pred.Hitchance >= HitChance.High)
